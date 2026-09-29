@@ -1,0 +1,154 @@
+/* ABOUT CSS */
+
+.about {
+    background-color: #f7e2c7;
+    padding-top: 10px;
+    border: 3px solid black;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.about h2 {
+    text-decoration: underline;
+}
+
+.about p {
+    font-size: x-large;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.one p,
+.two p,
+.three p,
+.four p {
+    padding: 20px;
+    margin: 0;
+}
+
+.about .row {
+    text-align: center;
+    margin: 30px;
+}
+
+.one,
+.two,
+.three,
+.four {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.one,
+.two,
+.three,
+.four {
+    animation: gentleFloat 10s ease-in-out infinite;
+}
+
+.vector02,
+.vector3 {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    animation: gentleFloat 8s ease-in-out infinite;
+}
+
+.vector3 {
+    margin-top: 30px;
+}
+
+
+/* Vector 4 and Vector 5 */
+
+
+.vector5 {
+    width: 350px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    animation: gentleFloat 8s ease-in-out infinite;
+}
+.vector4 {
+    padding-top: 80px;
+      width: 550px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    animation: gentleFloat 8s ease-in-out infinite;
+}
+
+
+@keyframes gentleFloat {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(5px, -6px);
+    }
+
+    50% {
+        transform: translate(-5px, -10px);
+    }
+
+    75% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    .about .row {
+        margin: 15px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        padding: 10px;
+    }
+
+    .one p,
+    .two p,
+    .three p,
+    .four p {
+        padding: 15px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .vector02,
+    .vector3,
+    .vector4,
+    .vector5 {
+        width: 300px;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .vector02,
+    .vector3,
+    .vector4,
+    .vector5 {
+        width: 160px;
+    }
+}

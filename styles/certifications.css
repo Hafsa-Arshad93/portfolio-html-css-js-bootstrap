@@ -1,0 +1,43 @@
+.certifications{
+     background-color: #f7e2c7;
+  padding-top: 10px;
+  border-radius: 10%;
+  margin: 15px;
+  text-align: center;
+    overflow: hidden;
+      border: 3px solid black;
+      margin-bottom: 10px;
+
+}
+.certifications .card{
+border-radius: 20%;
+overflow: hidden;
+box-sizing: border-box;
+      border: 3px solid black;
+
+
+}
+.certifications h2{
+    text-align: center;
+    font-style: oblique;
+    /* text-decoration: underline; */
+
+}
+.bg-container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+.certifications .card-img-top {
+    height: 300px;
+    object-fit: contain;
+    
+}
+.certifications .card {
+    transition: all 0.3s ease;
+}
+
+.certifications .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}

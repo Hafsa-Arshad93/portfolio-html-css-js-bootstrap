@@ -1,0 +1,270 @@
+body {
+  font-style: oblique;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+.navbar {
+  border: 3px solid #131212;
+  background-color: #f7e2c7;
+  border-radius: 10%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar .nav-link {
+  color: black;
+  font-size: x-large;
+  font-style: oblique;
+  margin-right: 3px;
+}
+
+.navbar .navbar-brand {
+  color: black;
+  font-size: x-large;
+  font-style: oblique;
+  letter-spacing: 2px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; 
+} 
+ 
+.home { 
+  background-color: #f7e2c7; 
+  padding-top: 10px; 
+  border: 3px solid black; 
+  border-radius: 10%; 
+  margin: 10px; 
+} 
+ 
+.home h1 { 
+  font-size: 30px; 
+  padding-bottom: 10px; 
+} 
+ 
+h2 { 
+  font-size: 20px; 
+  margin-bottom: 10px; 
+} 
+ 
+.para1 { 
+  font-size: 15px; 
+  text-align: justify 
+} 
+ 
+.home img { 
+  border-radius: 40%; 
+  border: 3px solid black; 
+  margin-bottom: 50px; 
+  margin-top: 20px; 
+} 
+ 
+.button-head a { 
+  border: 2px solid black; 
+  padding-left: 25px; 
+  padding-right: 25px; 
+  font-style: oblique; 
+  margin-bottom: 10px; 
+  margin-top: 10px; 
+  font-size: medium; 
+  background-color: aliceblue; 
+} 
+
+@media (min-width: 768px) and (max-width: 991px) { 
+  .home h1 { 
+    font-size: 30px; 
+    padding-bottom: 5px; 
+  } 
+ 
+  h2 { 
+    font-size: 30px; 
+  } 
+
+  .para1 { 
+    font-size: 15px; 
+  } 
+
+  .button-head a { 
+    border: 2px solid black; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    font-style: oblique; 
+    margin-top: 3px; 
+    font-size: medium; 
+    background-color: aliceblue; 
+  } 
+ 
+  .navbar .nav-link { 
+    margin-right: 5px; 
+  } 
+
+  .navbar .navbar-brand { 
+    font-size: x-large; 
+  } 
+
+  .orbit {
+    width: 100%;
+    height: 100%;
+    top: -5%;
+    left: 0;
+  }
+} 
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .home h1 { 
+    font-size: 50px; 
+    padding-bottom: 20px; 
+  } 
+
+  h2 { 
+    font-size: 40px; 
+  } 
+
+  .para1 { 
+    font-size: 20px; 
+  } 
+
+  .navbar .nav-link { 
+    margin-right: 15px; 
+  } 
+
+  .navbar .navbar-brand { 
+    font-size: xx-large; 
+  } 
+} 
+
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  .home h1 { 
+    font-size: 60px; 
+    padding-bottom: 40px; 
+  } 
+
+  h2 { 
+    font-size: 50px; 
+    padding-bottom: 10px; 
+  } 
+
+  .para1 { 
+    font-size: 25px; 
+  } 
+
+  .button-head a { 
+    border: 2px solid black; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+    font-style: oblique; 
+    margin-top: 5px; 
+    font-size: medium; 
+    background-color: aliceblue; 
+  } 
+
+  .navbar .nav-link { 
+    margin-right: 15px; 
+  } 
+
+  .navbar .navbar-brand { 
+    font-size: xx-large; 
+  } 
+} 
+
+#backToTop { 
+    position: fixed; 
+    right: 25px; 
+    bottom: 25px; 
+ 
+    width: 50px; 
+    height: 50px; 
+ 
+    font-size: 30px; 
+    font-weight: bold; 
+ 
+    border: 2px solid black; 
+    border-radius: 50%; 
+ 
+    cursor: pointer; 
+ 
+    display: none; 
+} 
+ 
+/* animations / effects */ 
+ 
+.profile-container { 
+    position: relative; 
+    display: inline-block; 
+} 
+ 
+.profile-pic { 
+    animation: gentlePic 5s ease-in-out infinite; 
+} 
+ 
+@keyframes gentlePic { 
+    0% { 
+        transform: translate(0, 0); 
+    } 
+ 
+    50% { 
+        transform: translate(5px, -5px); 
+    } 
+ 
+    100% { 
+        transform: translate(0, 0); 
+    } 
+} 
+ 
+ 
+/* vector around profile image */ 
+ 
+.orbit { 
+    position: absolute; 
+    width: 115%; 
+    height: 100%; 
+    top: -5%; 
+    left: -7.5%; 
+    pointer-events: none;; 
+} 
+ 
+.orbit img { 
+    width: 50px; 
+    position: absolute; 
+    border: 0 !important; 
+ 
+    offset-path: inset(0 round 30%); 
+    offset-distance: 0%; 
+    animation: moveAround 30s linear infinite; 
+} 
+ 
+@keyframes moveAround { 
+    to { 
+        offset-distance: 100%; 
+    } 
+} 
+
+@media (max-width: 991px) { 
+    .vector01 { 
+        width: 200px; 
+        max-width: 100%; 
+        margin: 20px auto; 
+    } 
+} 
+
+@media (max-width: 767px) {
+    .orbit {
+        width: 100%;
+        height: 100%;
+        top: -5%;
+        left: 0;
+    }
+}
+ 
+.button-head .btn { 
+    transition: all 0.3s ease; 
+} 
+ 
+.button-head .btn:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}

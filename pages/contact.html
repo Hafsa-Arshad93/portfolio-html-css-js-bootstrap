@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/navHome.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+          <div id="navbar" class="sticky-top"></div>
+<section class="contact">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Contact Information -->
+            <div class="col-12 col-md-5 hd-container1  text-center">
+                <div class="card card01 h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Me</h2>
+
+                        <p class="card-text">
+                            Feel free to get in touch with me.
+                        </p>
+
+                        <p>
+                            <b>Email:</b>
+                            <a href="mailto:hafsaarshad9302@gmail.com">
+                                hafsaarshad9302@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <b>LinkedIn:</b>
+                            <a href="https://www.linkedin.com/in/hafsa-arshad-52ba71317/" target="_blank">
+                                LinkedIn Profile
+                            </a>
+                        </p>
+
+                        <p>
+                            <b>GitHub:</b>
+                            <a href="https://github.com/Hafsa-Arshad93" target="_blank">
+                                GitHub Profile
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-12 col-md-7 hd-container2">
+                <div class="card card02 h-70">
+                    <div class="card-body innerCard ">
+                        <h2 class="card-title">Send a Message</h2>
+
+                        <form id="contactForm">
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">
+                                    Message
+                                </label>
+                                <textarea id="message" class="form-control" rows="5"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+
+                            <p id="formMessage"></p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<button id="backToTop">↑</button>
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../script.js"> </script>
+</body>
+</html>
